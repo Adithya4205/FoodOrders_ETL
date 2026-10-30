@@ -1,0 +1,30 @@
+{
+  "original_records": 1010,
+  "cleaned_records": 1000,
+  "exact_duplicates_removed": 10,
+  "invalid_timestamp_rows_removed": 0,
+  "negative_duration_rows_removed": 0,
+  "rows_with_valid_order_value": 960,
+  "rows_with_all_revenue_components": 828,
+  "rows_without_calculated_revenue": 172,
+  "missing_values_retained": {
+    "Order Value": 40,
+    "Delivery Fee": 50,
+    "Commission Fee": 40,
+    "Payment Processing Fee": 50,
+    "Refunds/Chargebacks": 40,
+    "Platform_Net_Revenue": 172
+  },
+  "validation_checks": {
+    "expected_columns_present": true,
+    "appropriate_datetime_and_numeric_types": true,
+    "exact_duplicates_handled": true,
+    "repeated_order_ids_checked_and_explained": true,
+    "no_negative_duration_in_valid_data": true,
+    "manual_duration_calculation_checks": true,
+    "manual_revenue_calculation_checks": true,
+    "missing_values_compared_and_documented": true,
+    "rows_removed_and_retained_accounted_for": true
+  },
+  "final_validation_status": "PASS"
+}

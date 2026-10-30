@@ -1,0 +1,52 @@
+{
+  "report_type": "local_data_validation",
+  "input_records": 1010,
+  "transformed_valid_records": 1000,
+  "rejected_records": 10,
+  "rejection_reason_counts": {
+    "exact_duplicate_source_row": 10
+  },
+  "exact_duplicate_rows_removed": 10,
+  "invalid_timestamp_rows_rejected": 0,
+  "negative_duration_rows_rejected": 0,
+  "implausibly_long_delivery_rows_flagged_and_retained": 0,
+  "repeated_order_ids_retained_for_review": 0,
+  "repeated_order_id_rows_in_transformed_data": 0,
+  "revenue_eligible_records": 828,
+  "missing_values_after_cleaning": {
+    "source_row_number": 0,
+    "Order ID": 0,
+    "Customer ID": 0,
+    "Restaurant ID": 0,
+    "Order Date and Time": 0,
+    "Delivery Date and Time": 0,
+    "Order Value": 40,
+    "Delivery Fee": 50,
+    "Payment Method": 0,
+    "Discounts and Offers": 0,
+    "Commission Fee": 40,
+    "Payment Processing Fee": 50,
+    "Refunds/Chargebacks": 40,
+    "Weather Condition": 0,
+    "Order Channel": 0,
+    "Delivery_Time_Minutes": 0,
+    "Order_Date": 0,
+    "Order_Hour": 0,
+    "Platform_Net_Revenue": 172,
+    "delivery_quality_flag": 0
+  },
+  "checks": {
+    "expected_columns_present": true,
+    "datetime_types_valid": true,
+    "financial_and_derived_numeric_types_valid": true,
+    "no_exact_duplicate_source_rows_in_cleaned_data": true,
+    "no_negative_delivery_duration_in_valid_data": true,
+    "repeated_order_ids_checked_and_reported": true,
+    "delivery_duration_formula_valid": true,
+    "revenue_formula_and_missingness_valid": true,
+    "rejected_records_have_reasons": true,
+    "row_accounting_balances": true
+  },
+  "final_validation_status": "PASS",
+  "database_pipeline_status": "NOT_RUN"
+}
